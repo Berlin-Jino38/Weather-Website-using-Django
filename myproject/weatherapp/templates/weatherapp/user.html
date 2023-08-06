@@ -1,0 +1,33 @@
+{%extends 'base.html'%}
+{%block title%}
+    User Details
+    {%endblock%}
+{%block content%}
+<section class="bg-light py-4 my-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h4 class="mb-3">User Details</h4>
+                <hr style="border-color:#b8bfc2;">
+               
+            </div>
+            <div class="row">
+              
+              
+                <table class="table table-bordered">
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        
+                        </tr>
+                     
+                        <tr>
+                          
+                            <td>{{user}}</td>
+                            <td>{{user.email}}</td>
+                          
+                         
+                        </tr>
+                   
+
+{%endblock%} 

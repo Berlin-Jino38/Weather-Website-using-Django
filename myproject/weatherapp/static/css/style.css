@@ -1,0 +1,6 @@
+.bg-secondary {
+  padding: 3px;
+  margin-bottom: 2px;
+  background-color: #989898; /* Change this to the desired secondary background color */
+  color: rgba(255, 255, 255, 0.551);
+}

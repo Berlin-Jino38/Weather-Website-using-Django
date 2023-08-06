@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{%block title%}
+    Home page
+    {%endblock%}
+{% load static %}
+
+{% block content %}
+<section class="vh-100" style="background-color: gray;">
+  <div class="container py-5 h-100">
+    {% comment %} <link rel="stylesheet" href="{% static 'css/style.css' %}">  {% endcomment %}
+
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-md-8 col-lg-6 col-xl-4">
+
+        <h3 class="mb-4 pb-2 fw-normal text-light">Check the weather forecast</h3>
+        <form  method="POST">
+          {% csrf_token %}
+        <div class="input-group rounded mb-3">
+          <input type="text" class="form-control rounded" placeholder="Enter City" name="city">
+            <button type="submit" class="btn-primary">Enter</button>
+        </div>
+      </form>
+      
+
+        <div class="card shadow-0 border">
+          <div class="card-body p-4">
+
+            <h4 class="mb-1 sfw-normal">{{city}}</h4>
+            <p class="mb-2">Current temperature: <strong>{{temp}}°C</strong></p>
+            
+
+            <div class="d-flex flex-row align-items-center">
+              <p class="mb-0 me-4">{{description}}</p>
+              <div class="icon">
+                <img src="http://openweathermap.org/img/w/{{icon}}.png" width="100px"</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section> 
+{% endblock content %}

@@ -9,8 +9,10 @@ This project is a web-based application that utilizes Django to create a user-fr
 Search for weather information in different locations.
 View current weather conditions temperature.
 
-# Demo link:https://drive.google.com/drive/folders/11QxC_Y5YAFIR1xjpdpNTvJpsLBNWjNFv?usp=sharing
+# Demo link:
+https://drive.google.com/drive/folders/11QxC_Y5YAFIR1xjpdpNTvJpsLBNWjNFv?usp=sharing
 
 
-# Weather API:https://openweathermap.org/
+# Weather API:
+https://openweathermap.org/
 
